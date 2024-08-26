@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button study</title>
+    <style>
+      button {
+        background-color: aqua;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 5px black;
+      }
+
+      button:hover {
+        background-color: red;
+        transition: 0.3s;
+      }
+
+      button:active {
+        background-color: blueviolet;
+        transform: translateY(-5px);
+      }
+
+      button::before {
+        content: "add";
+        position: absolute;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <button>버튼입니다</button>
+  </body>
+</html>
